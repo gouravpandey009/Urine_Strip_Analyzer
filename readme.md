@@ -5,7 +5,13 @@
 The Urine Strip Analyzer project is designed to analyze images of urine strips and extract associated colors for medical diagnostics. The project operates under the following assumptions:
 1. The input image is in `.jpg` format.
 2. These image has making the colors distinguishable to the human eye.
-![Screenshot](assets/0.png)
+
+### Screenshots
+
+![Screenshot 0](assets/0.png)
+![Screenshot 1](assets/1.png)
+![Screenshot 2](assets/2.png)
+![Screenshot 3](assets/3.png)
 
 ## Technology Stack
 
