@@ -1,71 +1,48 @@
-Urine Strip Analyzer 
-===================
+# Urine Stripes Analyzer
 
-This Project can analyze images of urine strips and extract the associated colors from the image. The following assumptions have been taken into account -
+## Project Overview
 
-1. The supplied image is in .jpg format
-2. The image is not very noise , i.e colors are distinguishable with human eye
+The Urine Strip Analyzer project is designed to analyze images of urine strips and extract associated colors for medical diagnostics. The project operates under the following assumptions:
+1. The input image is in `.jpg` format.
+2. These image has making the colors distinguishable to the human eye.
+![Screenshot](assets/0.png)
 
-Tech Stack and Methodology 
-----------
+## Technology Stack
 
 ### Frontend
 
-The Frontend is built using ReactJS with Vite as a build took . Chakra UI is used as the component library and Axios is used for making HTTP Requests.
+- **Framework**: ReactJS
+- **Build Tool**: Vite
+- **Component Library**: Chakra UI
+- **HTTP Client**: Axios
 
+### Backend
 
-### Backend 
+- **Framework**: FastAPI (Python)
+- **ASGI Server**: uvicorn
 
-The Backend server is built using FastAPI in python using uvicorn as the ASGI server. The choice of FastAPI as a framework is because the scope of the project requires small number of API routes.
+## Methodology
 
-##### Colour Extractor
+### Color Extraction Process
 
-The extractColors.py file contains the main logic for the color extraction. The process can be divided into three steps :-
+The color extraction logic is encapsulated in the `extractColors.py` file and involves three main steps:
 
-1. **Cropping** - Cropping is done to remove the background as it can interfere with the color detection
-2. **PreProcessing** - A billinear extrapolator is used to replace value of each pixel with the average value of the row to remove artifacts like granular noise and dark patches
-    
-3. **Segmentation** - small segements of size (2x2) pixels are extracted from the image using a vertical offset to get the color from each sqaure and the average value of this (2x2) grid is used to determine the final RGB value of the square
+1. **Cropping**: The background is removed to prevent interference with color detection.
+2. **Preprocessing**: A bilinear extrapolator is used to replace each pixel's value with the average value of the row, eliminating granular noise and dark patches.
+3. **Segmentation**: Small segments (2x2 pixels) are extracted from the image using a vertical offset to capture the color from each square. The average value of these segments determines the final RGB value of each square.
 
+## Deployment
 
+### Using Docker and Docker Compose
 
-Setup
------
+Follow these steps to deploy the application:
 
-### Bare Metal Setup
+1. Ensure Docker and Docker Compose are installed on your system.
+2. Navigate to the root directory of the project.
+3. Run the following command to build and start the application:
 
-1. Clone this repository using 
-   
-   ```
-   $ git clone 
-   ```
-2. Navigate to the backend folder,install the required dependencies and start the webserver on port 8000
-   
-   ```
-   $ cd ./backend/
-   $ pip install -r requirements.txt
-   $ uvicorn api:app
+   ```sh
+   docker-compose up
    ```
 
-3. Navigate to the frontend folder,install the required dependencies and start the webapp on port 5173
-   
-   ```
-   $ cd ../frontend/
-   $ npm install
-   $ npm run dev
-   ````
-
-4. In your browser Navigate to http://localhost:5173
-
-
-### Using docker-compose and Docker
-
-1. If you have Docker and docker-compose installed on your system just navigate to the root of the project and run 
-
-   ```
-   $ docker compose up
-   ```
-
-2. In your browser Navigate to http://localhost:5173
-
-
+4. Open your browser and navigate to [http://localhost:5173](http://localhost:5173).
