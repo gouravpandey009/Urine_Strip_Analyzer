@@ -64,3 +64,65 @@ Follow these steps to deploy the application:
    ```
 
 4. Open your browser and navigate to [http://localhost:5173](http://localhost:5173).
+
+
+#Extended Description
+
+Sure! Here is an extended description you can add to your `README.md` file:
+
+---
+
+## Extended Description
+
+### Motivation
+
+Urine strip tests are a common diagnostic tool used in medical practice to detect a variety of conditions based on the chemical composition of urine. Automating the analysis of these strips can enhance accuracy, efficiency, and accessibility in medical diagnostics.
+
+### Features
+
+- **User-Friendly Interface**: The frontend, built with ReactJS and styled using Chakra UI, provides a clean and intuitive interface for uploading and analyzing urine strip images.
+- **Efficient Backend Processing**: The FastAPI backend ensures fast and reliable processing of images, utilizing Python's robust image processing libraries.
+- **Color Extraction**: Advanced algorithms preprocess and segment the image to accurately extract color data from urine strips.
+- **Dockerized Deployment**: Easy deployment with Docker and Docker Compose, enabling consistent and reproducible environments.
+
+### Installation
+
+To set up the development environment, follow these steps:
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/yourusername/urine-strip-analyzer.git
+   cd urine-strip-analyzer
+   ```
+
+2. Install frontend dependencies:
+
+   ```sh
+   cd frontend
+   npm install
+   ```
+
+3. Install backend dependencies:
+
+   ```sh
+   cd backend
+   pip install -r requirements.txt
+   ```
+
+### Usage
+
+1. Start the backend server:
+
+   ```sh
+   uvicorn main:app --reload
+   ```
+
+2. Start the frontend development server:
+
+   ```sh
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:5173` to use the application.
+
