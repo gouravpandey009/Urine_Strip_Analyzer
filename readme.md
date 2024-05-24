@@ -12,7 +12,19 @@ The Urine Strip Analyzer project is designed to analyze images of urine strips a
 ![Screenshot 1](assets/1.PNG)
 ![Screenshot 2](assets/2.PNG)
 ![Screenshot 3](assets/3.PNG)
-
+![Screenshot 4](assets/4.PNG)
+![Screenshot 5](assets/5.PNG)
+![Screenshot 6](assets/6.PNG)
+![Screenshot 7](assets/7.PNG)
+![Screenshot 8](assets/8.PNG)
+![Screenshot 9](assets/9.PNG)
+![Screenshot 10](assets/10.PNG)
+![Screenshot 11](assets/11.PNG)
+![Screenshot 12](assets/12.PNG)
+![Screenshot 13](assets/13.PNG)
+![Screenshot 14](assets/14.PNG)
+![Screenshot 15](assets/15.PNG)
+![Screenshot 16](assets/16.PNG)
 ## Technology Stack
 
 ### Frontend
