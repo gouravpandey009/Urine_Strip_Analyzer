@@ -36,7 +36,7 @@ The Urine Strip Analyzer project is designed to analyze images of urine strips a
 
 ### Backend
 
-- **Framework**: FastAPI (Python)
+- **Framework**: Django + FastAPI (Python)
 - **ASGI Server**: uvicorn
 
 ## Methodology
